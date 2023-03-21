@@ -69,7 +69,7 @@ app.post("/",function (req,res) {
     // option object is made to carry additional property required b y the web server
     const options = {
         method:"POST",
-        auth: "shruti1:1dc49d422866a43aeb9a569feb6eac7d-us8" // authentication 
+        auth: "shruti1:fa1eb811e93324d594c51bf0c638622e-us8" // authentication 
     };
     // putting the data comming into the variable
     const request = https.request(url,options,function (response) {
