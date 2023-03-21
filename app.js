@@ -16,7 +16,7 @@ const app = express();
 
 
 //to use the static files of the computer
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public/"));
 
 //initialize body parser to use it to get the input value in the form of objects from the web page
 app.use(bodyParser.urlencoded({extended: true}));
