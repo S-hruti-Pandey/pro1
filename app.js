@@ -17,7 +17,7 @@ const app = express();
 
 //to use the static files of the computer
 app.use(express.static(__dirname + "/public/"));
-console.log(__dirname + "/public/");
+
 
 //initialize body parser to use it to get the input value in the form of objects from the web page
 app.use(bodyParser.urlencoded({extended: true}));
@@ -32,7 +32,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get("/",function (req,res) {
     res.sendFile(__dirname + "/signup.html")
 });
-console.log(__dirname + "/signup.html");
 
 //to get the input value and process it and send back the response we write
 app.post("/",function (req,res) {
